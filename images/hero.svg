@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Sun over ocean waves">
+  <rect width="800" height="300" fill="#f4e9d8"/>
+  <circle cx="620" cy="90" r="50" fill="#f2b45a"/>
+  <path d="M0 170 C100 130, 200 130, 300 170 S500 210, 600 170 S750 130, 800 160 V300 H0 Z" fill="#1fa2b8"/>
+  <path d="M0 220 C100 185, 200 185, 300 220 S500 255, 600 220 S750 190, 800 215 V300 H0 Z" fill="#0b4f6c"/>
+</svg>
