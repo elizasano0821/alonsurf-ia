@@ -1,32 +1,281 @@
-/* Alon Surf - brand colors: ocean blue #0b4f6c, aqua #1fa2b8, sand #f4e9d8 */
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4e9d8; color: #1b2a33; line-height: 1.5; }
-#env-bar { display: none; background: #ffe14d; color: #333; text-align: center; font-weight: bold; padding: 6px; }
-header { background: #0b4f6c; display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; }
-.logo { height: 44px; }
-nav a { color: #f4e9d8; text-decoration: none; margin-left: 18px; font-weight: bold; }
-nav a:hover { color: #1fa2b8; }
-main { max-width: 900px; margin: 0 auto; padding: 20px; }
-h1, h2 { color: #0b4f6c; }
-.hero { text-align: center; }
-.hero img { width: 100%; height: auto; border-radius: 8px; }
-.tagline { font-size: 1.2em; font-style: italic; }
-.btn { display: inline-block; background: #0b4f6c; color: #f4e9d8; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; }
-.cards { display: flex; gap: 16px; }
-.card { flex: 1; background: #fff; border-radius: 8px; padding: 14px; border-top: 4px solid #1fa2b8; }
-.boards img { max-width: 100%; }
 
-/* lessons table */
-.price-table { width: 720px; border-collapse: collapse; background: #fff; }
-.price-table th { background: #0b4f6c; color: #f4e9d8; text-align: left; padding: 8px; }
-.price-table td { border-bottom: 1px solid #ccc; padding: 8px; }
+/* Alon Surf - brand colors:
+   ocean blue #0b4f6c
+   aqua #1fa2b8
+   sand #f4e9d8
+*/
 
-/* booking form */
-form { width: 480px; background: #fff; padding: 18px; border-radius: 8px; }
-label { display: block; margin-top: 12px; font-weight: bold; }
-input, select { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #999; border-radius: 4px; }
-button { margin-top: 16px; background: #0b4f6c; color: #f4e9d8; border: 0; padding: 10px 22px; border-radius: 6px; font-weight: bold; cursor: pointer; }
-.error { color: #b3261e; font-size: 0.9em; min-height: 1em; }
-#thanks { display: none; background: #d9f2e3; border: 1px solid #2e8b57; padding: 12px; margin-top: 16px; border-radius: 6px; }
+/* Global settings */
+* {
+    box-sizing: border-box;
+}
 
-footer { background: #b3261e; color: #fff; text-align: center; padding: 14px; margin-top: 30px; }
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4e9d8;
+    color: #1b2a33;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#env-bar {
+    display: none;
+    background: #ffe14d;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px;
+}
+
+/* Header and navigation */
+header {
+    background: #0b4f6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 44px;
+    max-width: 100%;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: #f4e9d8;
+    text-decoration: none;
+    margin-left: 0;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1fa2b8;
+}
+
+/* Main content */
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #0b4f6c;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    background: #0b4f6c;
+    color: #f4e9d8;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Feature cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    flex: 1 1 200px;
+    min-width: 0;
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px;
+    border-top: 4px solid #1fa2b8;
+}
+
+/* Surfboards */
+.boards {
+    width: 100%;
+}
+
+.boards img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lessons table */
+.price-table {
+    width: 100%;
+    max-width: 720px;
+    border-collapse: collapse;
+    background: #fff;
+    table-layout: fixed;
+}
+
+.price-table th {
+    background: #0b4f6c;
+    color: #f4e9d8;
+    text-align: left;
+    padding: 8px;
+}
+
+.price-table td {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    overflow-wrap: break-word;
+}
+
+/* Booking form */
+form {
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 16px;
+    background: #0b4f6c;
+    color: #f4e9d8;
+    border: 0;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.error {
+    color: #b3261e;
+    font-size: 0.9em;
+    min-height: 1em;
+}
+
+#thanks {
+    display: none;
+    background: #d9f2e3;
+    border: 1px solid #2e8b57;
+    padding: 12px;
+    margin-top: 16px;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background: #b3261e;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    margin-top: 30px;
+}
+
+/* Mobile responsive layout */
+@media screen and (max-width: 576px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .price-table {
+        font-size: 13px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
